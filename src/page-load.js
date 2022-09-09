@@ -12,5 +12,21 @@ function pageLoader(){
     content.appendChild(textdiv)
 
 }
-
-export{pageLoader}
+function navBar(){
+    const content = document.getElementById("content")
+    let nav = document.createElement("nav")
+    let home = document.createElement("div")
+    let menu = document.createElement("div")
+    let contact = document.createElement("div")
+    home.classList.add("nav-item")
+    menu.classList.add("nav-item")
+    contact.classList.add("nav-item")
+    home.textContent = "Home"
+    menu.textContent = "Menu"
+    contact.textContent = "Contact"
+    nav.appendChild(home)
+    nav.appendChild(menu)
+    nav.appendChild(contact)
+    content.appendChild(nav)
+}
+export{pageLoader,navBar}

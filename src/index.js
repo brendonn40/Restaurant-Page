@@ -1,3 +1,11 @@
-import {pageLoader} from "./page-load.js"
+import {pageLoader,navBar} from "./page-load.js"
+import {contact} from "./contact.js"
 console.log("hello world")
-pageLoader()
+navBar()
+// pageLoader()
+contact()
+
+const clear = () =>{
+    const content = document.getElementById("content")
+    content.textContent= ""
+}
