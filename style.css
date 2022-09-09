@@ -14,9 +14,27 @@ text-align: center;
 width: 400px;
 
 }
+.contact-text{
+  width: 500px;
+  background-color: bisque;
+}
 #content{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+gap: 15px;
+}
+nav{
+  display: flex;
+  gap: 20px;
+}
+nav>div{
+  margin-top: 20px;
+  background-color: bisque;
+  font-size: 2rem;
+}
+.contact-img{
+    width: 500px;
+    height: auto;
 }
