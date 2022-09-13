@@ -10,7 +10,10 @@ function pageLoader(){
    
     content.appendChild(headline)
     content.appendChild(textdiv)
-
+    let homeImg = document.createElement("img")
+    homeImg.src="../marcus.jpg"
+    content.appendChild(homeImg)
+    
 }
 function navBar(){
     const content = document.getElementById("content")
@@ -19,8 +22,11 @@ function navBar(){
     let menu = document.createElement("div")
     let contact = document.createElement("div")
     home.classList.add("nav-item")
+    home.setAttribute('data',"home")
     menu.classList.add("nav-item")
+    menu.setAttribute("data","menu")
     contact.classList.add("nav-item")
+    contact.setAttribute("data","contact")
     home.textContent = "Home"
     menu.textContent = "Menu"
     contact.textContent = "Contact"
@@ -28,5 +34,6 @@ function navBar(){
     nav.appendChild(menu)
     nav.appendChild(contact)
     content.appendChild(nav)
+    
 }
 export{pageLoader,navBar}

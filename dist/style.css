@@ -50,3 +50,6 @@ img{
   display: flex;
   gap: 30px;
 }
+.active{
+  background-color: aqua;
+}
