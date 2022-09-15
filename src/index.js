@@ -1,6 +1,7 @@
 import {pageLoader,navBar} from "./page-load.js"
 import {contact} from "./contact.js"
 import {menu} from "./menu.js"
+import "./style.css"
 navBar()
 pageLoader()
 CreateEventListeners()

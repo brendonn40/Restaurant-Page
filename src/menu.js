@@ -1,3 +1,6 @@
+import sandwhich from "./sandwitch.jpg"
+import spagueti from "./spaghetti.jpg"
+import donuts from "./donuts.jpg"
 export function menu(){
     const content = document.getElementById("content")
     let snacks =document.createElement("div")
@@ -11,17 +14,17 @@ export function menu(){
     let dessertTagline = document.createElement("h2")
     let container = document.createElement("div")
     container.classList.add("container")
-    snacksImg.src="../sandwitch.jpg"
+    snacksImg.src = sandwhich
     snackTagline.textContent= "Snacks"
     snacks.appendChild(snacksImg)
     snacks.appendChild(snackTagline)
     snacks.innerHTML+="\nTry out our traditional sandwhich!"
-    mealImg.src="../spaghetti.jpg"
+    mealImg.src = spagueti 
     mealTagline.textContent="Meals"
     meals.appendChild(mealImg)
     meals.appendChild(mealTagline)
     meals.innerHTML+="Have some of our famous spaghetti!"
-    dessertImg.src="../donuts.jpg"
+    dessertImg.src = donuts
     dessertTagline.textContent = "Desserts"
     desserts.appendChild(dessertImg)
     desserts.appendChild(dessertTagline)

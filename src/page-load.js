@@ -1,3 +1,4 @@
+import marcus from "./marcus.jpg"
 function pageLoader(){
     const content = document.getElementById("content")
     let headline = document.createElement("h1")
@@ -11,7 +12,7 @@ function pageLoader(){
     content.appendChild(headline)
     content.appendChild(textdiv)
     let homeImg = document.createElement("img")
-    homeImg.src="../marcus.jpg"
+    homeImg.src = marcus
     content.appendChild(homeImg)
     
 }

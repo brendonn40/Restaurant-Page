@@ -7,6 +7,7 @@ module.exports = {
   index:'./src/index.js',
   pageLoad:'./src/page-load.js'
 },
+
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
@@ -18,5 +19,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
    
   },
-  
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+     {
+       test: /\.(png|svg|jpg|jpeg|gif)$/i,
+       type: 'asset/resource',
+     },
+    ],
+  }
 };

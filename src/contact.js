@@ -1,3 +1,4 @@
+import carmey from "./contact.jpg"
 export function contact(){
     const content = document.getElementById("content")
     let img = document.createElement("img")
@@ -8,7 +9,7 @@ export function contact(){
     a.appendChild(link)
     a.title = "Rotten Tomatoes"
     a.href="https://www.rottentomatoes.com/tv/the_bear"
-    img.src="../contact.jpg"
+    img.src = carmey
     img.classList.add("contact-img")
     div.appendChild(img)
     text.textContent = "Get in touch with us for reservations via email: thebear@tvshow.com\nYou can Also see some reviews on "
