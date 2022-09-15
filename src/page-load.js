@@ -23,9 +23,9 @@ function navBar(){
     let contact = document.createElement("div")
     home.classList.add("nav-item")
     home.setAttribute('data',"home")
-    menu.classList.add("nav-item")
+    menu.classList.add("nav-item","hidden")
     menu.setAttribute("data","menu")
-    contact.classList.add("nav-item")
+    contact.classList.add("nav-item","hidden")
     contact.setAttribute("data","contact")
     home.textContent = "Home"
     menu.textContent = "Menu"

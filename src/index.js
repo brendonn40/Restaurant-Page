@@ -1,7 +1,6 @@
 import {pageLoader,navBar} from "./page-load.js"
 import {contact} from "./contact.js"
 import {menu} from "./menu.js"
-console.log("hello world")
 navBar()
 pageLoader()
 CreateEventListeners()
@@ -21,6 +20,8 @@ function CreateEventListeners(){
         navItems[i].addEventListener("click",function(e){
             e.stopPropagation()
             CallFunction(navItems[i].getAttribute("data"))
+            toogleOld()
+            navItems[i].classList.toggle("hidden")
             CreateEventListeners()
         })
         
@@ -44,11 +45,13 @@ function CallFunction(name){
             break;
     }
 }
-// function ChangeActive(nodelist,index){
-    
-//     for (let i = 0; i < nodelist.length; i++) {
-//         nodelist[i].classlist.remove("active")
+
+function toogleOld(){
+    const items = document.getElementsByClassName("nav-item")
+    for (let i = 0; i < items.length; i++) {
+        if (!items[i].classList.contains("hidden")){
+            items[i].classList.toggle("hidden")
+        }
         
-//     }
-//     nodelist[index].classlist.add("active")
-// }
+    }
+}
