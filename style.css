@@ -50,6 +50,10 @@ img{
   display: flex;
   gap: 30px;
 }
-.active{
+.nav-item{
   background-color: aqua;
+}
+.hidden{
+  background-color: bisque;
+ 
 }
